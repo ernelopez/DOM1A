@@ -52,7 +52,7 @@ Juego.prototype.dibujarInputNombres = function() {
     const fuenteNormal = `${this.tamanoFuente}px Junegull`;
 
     // Título
-    dibujarTexto(ctx, "Dominó de equivalencias", centroX, centroY - 450, fuenteTitulo, COLOR_TITULO, true);
+    dibujarTexto(ctx, "Dominó de equivalencias - Nivel inicial", centroX, centroY - 450, fuenteTitulo, COLOR_TITULO, true);
 
     // Subtítulo
     dibujarTexto(ctx, "Ingresá los nombres de los jugadores", centroX, centroY - 300, fuenteInput, '#ffffff', true);
@@ -416,6 +416,8 @@ Juego.prototype.dibujarMensajes = function() {
 
     dibujarTexto(this.ctx, "Dominó de equivalencias", centroX,
                  Math.floor(150 * this.escala), fuenteTitulo, COLOR_TITULO, true);
+    dibujarTexto(this.ctx, "Nivel inicial", centroX,
+                 Math.floor(190 * this.escala), fuenteTitulo, COLOR_TITULO, true);
 
     let texto = "";
     let color = COLOR_TEXTO;
@@ -487,7 +489,7 @@ Juego.prototype.dibujarAyudaCartel = function() {
     // Instrucciones
     const fuenteInstrucciones = `${Math.floor(22 * this.escala)}px Junegull`;
     const instrucciones = [
-        "1. Cada jugador recibe 6 fichas. Comienza el jugador que tenga la mayor ficha con dos",
+        "1. Cada jugador recibe 4 fichas. Comienza el jugador que tenga la mayor ficha con dos",
         "expresiones equivalentes.",
         "",
         "2. En su turno, cada jugador debe colocar una ficha que tenga un número equivalente al",
